@@ -99,7 +99,8 @@ oppia.directive('topNavigationBar', [
             angular.element('.oppia-nav-about').find('ul').find('li')
               .find('a').first().keydown(function (e) {
                 if (e.shiftKey && e.keyCode === 9) {
-                  // If the user presses shift+tab on the first list item hide the menus
+                  // If the user presses shift+tab on the first list item
+                  //hide the menus
                   if (angular.element('.oppia-nav-about').hasClass('open')) {
                     angular.element('.oppia-nav-about').removeClass('open');
                   }
